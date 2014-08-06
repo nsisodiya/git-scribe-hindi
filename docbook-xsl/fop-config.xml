@@ -1,0 +1,23 @@
+<fop version="1.0">
+  <renderers>
+    <renderer mime="application/pdf">
+      <fonts>
+        <font kerning="yes"
+                 embed-url="file:///var/lib/gems/1.8/gems/git-scribe-0.1.1/docbook-xsl/kalimati.ttf"
+                 encoding-mode="cid">
+               <font-triplet name="kalimati" style="normal" weight="normal"/>
+           </font>
+           <font kerning="yes"
+                 embed-url="file:///var/lib/gems/1.8/gems/git-scribe-0.1.1/docbook-xsl/lohit_hi.ttf"
+                 encoding-mode="cid">
+               <font-triplet name="lohit" style="normal" weight="normal"/>
+           </font>
+	 <font kerning="yes"
+                 embed-url="file:///var/lib/gems/1.8/gems/git-scribe-0.1.1/docbook-xsl/MANGAL.TTF"
+                 encoding-mode="cid">
+               <font-triplet name="mangal" style="normal" weight="normal"/>
+           </font>
+      </fonts>
+    </renderer>
+  </renderers>
+</fop>

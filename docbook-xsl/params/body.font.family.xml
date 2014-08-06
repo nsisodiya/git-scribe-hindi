@@ -11,6 +11,8 @@
 <refmiscinfo class="other" otherclass="value">serif</refmiscinfo>
 <refmiscinfo class="other" otherclass="value">sans-serif</refmiscinfo>
 <refmiscinfo class="other" otherclass="value">monospace</refmiscinfo>
+<refmiscinfo class="other" otherclass="value">lohit</refmiscinfo>
+<refmiscinfo class="other" otherclass="value">kalimati</refmiscinfo>
 </refmeta>
 <refnamediv>
 <refname>body.font.family</refname>

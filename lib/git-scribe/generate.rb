@@ -65,7 +65,7 @@ class GitScribe
         'admon.graphics'   => 0,
       }
       run_xslt "-o #{local('book.fo')} #{local('book.xml')} #{base('docbook-xsl/fo.xsl')}", java_options
-      ex "fop -fo #{local('book.fo')} -pdf #{local('book.pdf')}"
+      ex "fop -c #{base('docbook-xsl/fop-config.xml')} -fo #{local('book.fo')} -pdf #{local('book.pdf')}"
 
       if $?.success?
         'book.pdf'
@@ -126,7 +126,8 @@ class GitScribe
             link = item.css('a').first
             sections[c]['title'] = title = link.text
             sections[c]['href'] = href = link['href']
-            clean_title = title.downcase.gsub(/[^a-z0-9\-_]+/, '_') + '.html'
+            #clean_title = title.downcase.gsub(/[^a-z0-9\-_]+/, '_') + '.html'
+            clean_title = title + '.html'
             sections[c]['link'] = clean_title
             if href[0, 10] == 'index.html'
               sections[c]['link'] = 'title.html'

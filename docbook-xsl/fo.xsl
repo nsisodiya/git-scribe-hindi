@@ -33,7 +33,7 @@
 <!-- justify, left or right -->
 <xsl:param name="alignment">left</xsl:param>
 
-<xsl:param name="body.font.family" select="'serif'"/>
+<xsl:param name="body.font.family" select="'serif,kalimati'"/>
 <xsl:param name="body.font.master">12</xsl:param>
 <xsl:param name="body.font.size">
  <xsl:value-of select="$body.font.master"/><xsl:text>pt</xsl:text>
